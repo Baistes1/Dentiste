@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Martin Duval - Dentiste à Paris | Soins dentaires et Esthétique</title>
+    <meta name="description" content="Cabinet dentaire du Dr. Martin Duval à Paris. Soins dentaires, implantologie, orthodontie, blanchiment. Prenez rendez-vous en ligne.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-tooth logo-icon"></i>
+                <div class="logo-text">
+                    <span>Dr. Martin Duval</span>
+                    <span class="logo-subtitle">CHIRURGIEN-DENTISTE</span>
+                </div>
+            </a>
+            
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Accueil</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">cabinet</a></li>
+                    <li><a href="#team" class="nav-link">L'équipe</a></li>
+                    <li><a href="#testimonials" class="nav-link">Témoignages</a></li>
+                    <li><a href="#appointment" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="header-cta">
+                    <a href="tel:+33123456789" class="phone-number">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>01 23 45 67 89</span>
+                    </a>
+                    <a href="#appointment" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i>
+                        Prendre Rendez-vous
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Votre santé dentaire, <span>notre priorité</span></h1>
+                <p class="hero-subtitle">
+                    Au cabinet du Dr. Martin Duval, nous offrons des soins dentaires complets et personnalisés dans un environnement moderne et confortable. Notre équipe de professionnels dévoués est là pour vous accompagner vers un sourire sain et éclatant.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn btn-primary">
+                        <i class="fas fa-calendar-alt"></i>
+                        Prendre rendez-vous
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="fas fa-stethoscope"></i>
+                        Nos services
+                    </a>
+                </div>
+                
+                <div class="hero-features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <span class="feature-text">Urgences dentaires</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <span class="feature-text">Équipe expérimentée</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <span class="feature-text">Technologie moderne</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="Materiel/materiel5.jpg" alt="Cabinet dentaire moderne">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container services-container">
+            <h2 class="section-title">Nos services dentaires</h2>
+            <p class="text-center mb-3" style="max-width: 700px; margin: 0 auto 3rem auto;">
+                Nous proposons une gamme complète de soins dentaires adaptés à tous les besoins, des traitements préventifs aux interventions spécialisées.
+            </p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Soins conservateurs</h3>
+                        <p class="service-description">
+                            Traitement des caries, détartrage, scellement des sillons. Préservez vos dents naturelles grâce à nos techniques mini-invasives.
+                        </p>
+                        <a href="#" class="service-link">
+                            En savoir plus
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth-open"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Esthétique du sourire</h3>
+                        <p class="service-description">
+                            Blanchiment, facettes, courres en céramique. Redonnez de l'éclat à votre sourire avec nos traitements esthétiques personnalisés.
+                        </p>
+                        <a href="#" class="service-link">
+                            En savoir plus
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-toothbrush"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Implantologie</h3>
+                        <p class="service-description">
+                            Remplacement de dents manquantes par des implants. Une solution durable et naturelle pour retrouver une mastication optimale.
+                        </p>
+                        <a href="#" class="service-link">
+                            En savoir plus
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-braces"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Orthodontie</h3>
+                        <p class="service-description">
+                            Traitements orthodontiques pour enfants et adultes. Appareils fixes, invisalign et techniques discrètes pour un alignement parfait.
+                        </p>
+                        <a href="#" class="service-link">
+                            En savoir plus
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Parodontologie</h3>
+                        <p class="service-description">
+                            Traitement des maladies des gencives. Préservez le soutien de vos dents grâce à nos thérapies parodontales avancées.
+                        </p>
+                        <a href="#" class="service-link">
+                            En savoir plus
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hospital-user"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Urgences dentaires</h3>
+                        <p class="service-description">
+                            Douleurs, traumatismes, abcès. Nous vous recevons en urgence pour soulager votre douleur et traiter le problème rapidement.
+                        </p>
+                        <a href="#" class="service-link">
+                            En savoir plus
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Cabinet dentaire">
+            </div>
+            
+            <div class="about-content">
+                <h2 class="about-title">Notre cabinet dentaire</h2>
+                <p class="about-text">
+                    Fondé en 2010 par le Dr. Martin Duval, notre cabinet allie expertise médicale, technologie de pointe et approche humaine. Nous croyons que chaque patient mérite des soins personnalisés dans un environnement accueillant et rassurant.
+                </p>
+                <p class="about-text">
+                    Notre équipe de professionnels expérimentés se forme régulièrement aux dernières avancées dentaires pour vous offrir des traitements efficaces, durables et confortables.
+                </p>
+                
+                <div class="about-features">
+                    <div class="about-feature">
+                        <div class="about-feature-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <h4>Équipements de dernière génération</h4>
+                            <p>Scanner 3D, caméra intra-orale, radiographie numérique</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feature">
+                        <div class="about-feature-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <h4>Approche personnalisée</h4>
+                            <p>Chaque traitement est adapté à vos besoins spécifiques</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feature">
+                        <div class="about-feature-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div>
+                            <h4>Urgences prises en charge</h4>
+                            <p>Réponse rapide pour les situations urgentes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#appointment" class="btn btn-primary mt-2">
+                    <i class="fas fa-calendar-alt"></i>
+                    Visiter notre cabinet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Notre équipe</h2>
+            <p class="text-center mb-3" style="max-width: 700px; margin: 0 auto 3rem auto;">
+                Une équipe de professionnels dévoués à votre santé bucco-dentaire, unis par la même passion pour l'excellence clinique et le relationnel patient.
+            </p>
+            
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Dr. Martin Duval">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Dr. Martin Duval</h3>
+                        <span class="team-role">Chirurgien-Dentiste</span>
+                        <p class="team-description">
+                            Diplômé de l'Université de Paris, spécialisé en implantologie et chirurgie orale. Plus de 15 ans d'expérience.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1594824434340-7e7dfc37cabb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Dr. Sophie Martin">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Dr. Sophie Martin</h3>
+                        <span class="team-role">Dentiste - Spécialiste en orthodontie</span>
+                        <p class="team-description">
+                            Orthodontiste diplômée, experte en traitements invisalign et orthodontie linguale. Passionnée par l'esthétique du sourire.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2064&q=80" alt="Marie Dubois">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Marie Dubois</h3>
+                        <span class="team-role">Assistante dentaire</span>
+                        <p class="team-description">
+                            Assistante dentaire depuis 8 ans, elle veille à votre confort pendant les soins et assure la stérilisation du matériel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container testimonials-container">
+            <h2 class="section-title">Ce que disent nos patients</h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "J'ai longtemps eu peur du dentiste avant de découvrir le cabinet du Dr. Duval. L'équipe est extrêmement à l'écoute, les explications sont claires et les soins sont pratiqués avec une grande douceur. Mon traitement d'implant s'est parfaitement déroulé."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Julie Martin">
+                                </div>
+                                <div>
+                                    <div class="author-name">Julie Martin</div>
+                                    <div class="author-treatment">Traitement implantaire</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Le blanchiment des dents effectué par le Dr. Duval a transformé mon sourire. Le résultat est naturel et l'équipe m'a guidé à chaque étape. Je recommande vivement ce cabinet pour leur professionnalisme et leur bienveillance."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Thomas Leroy">
+                                </div>
+                                <div>
+                                    <div class="author-name">Thomas Leroy</div>
+                                    <div class="author-treatment">Blanchiment dentaire</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Ma fille de 12 ans a suivi un traitement orthodontique avec le Dr. Martin. Les résultats sont spectaculaires et le suivi a été impeccable. L'ambiance du cabinet est très rassurante pour les enfants."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Isabelle Petit">
+                                </div>
+                                <div>
+                                    <div class="author-name">Isabelle Petit</div>
+                                    <div class="author-treatment">Orthodontie enfant</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="appointment" id="appointment">
+        <div class="container appointment-container">
+            <h2 class="section-title">Prenez rendez-vous</h2>
+            <p class="text-center mb-3" style="max-width: 700px; margin: 0 auto 1rem auto;">
+                Notre secrétariat est à votre disposition du lundi au vendredi de 8h à 19h et le samedi de 9h à 13h. 
+                Prenez rendez-vous en ligne ou par téléphone.
+            </p>
+            
+            <div class="appointment-form">
+                <form id="rdvForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Date souhaitée *</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label for="service">Service souhaité</label>
+                            <select id="service" class="form-control">
+                                <option value="">-- Sélectionnez un service --</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="detartrage">Détartrage</option>
+                                <option value="urgence">Urgence dentaire</option>
+                                <option value="implant">Implantologie</option>
+                                <option value="orthodontie">Orthodontie</option>
+                                <option value="blanchiment">Blanchiment</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" style="grid-column: 1 / -1;">
+                            <label for="message">Message (optionnel)</label>
+                            <textarea id="message" class="form-control" rows="4" placeholder="Décrivez brièvement la raison de votre visite..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-accent form-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer la demande
+                    </button>
+                    
+                    <p class="text-center mt-2" style="color: var(--dark-gray); font-size: 0.9rem;">
+                        * Champs obligatoires. Nous vous contacterons dans les 24h pour confirmer votre rendez-vous.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>Dr. Martin Duval</h3>
+                    <p style="color: #adb5bd; margin-bottom: 20px;">
+                        Cabinet dentaire offrant des soins complets dans un environnement moderne et accueillant. Votre santé bucco-dentaire est notre priorité.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home" class="footer-link"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                        <li><a href="#services" class="footer-link"><i class="fas fa-chevron-right"></i> Nos services</a></li>
+                        <li><a href="#about" class="footer-link"><i class="fas fa-chevron-right"></i> Notre cabinet</a></li>
+                        <li><a href="#team" class="footer-link"><i class="fas fa-chevron-right"></i> L'équipe</a></li>
+                        <li><a href="#appointment" class="footer-link"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Nos services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link"><i class="fas fa-tooth"></i> Soins conservateurs</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-teeth-open"></i> Esthétique dentaire</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-toothbrush"></i> Implantologie</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-braces"></i> Orthodontie</a></li>
+                        <li><a href="#" class="footer-link"><i class="fas fa-hospital-user"></i> Urgences</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>123 Avenue des Champs-Élysées<br>75008 Paris, France</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>01 23 45 67 89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@dr-martinduval.fr</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lun-Ven: 8h-19h<br>Samedi: 9h-13h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2024</span> Cabinet dentaire Dr. Martin Duval. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
