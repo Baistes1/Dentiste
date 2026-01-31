@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Martin Duval - Service | Cabinet Dentaire à Paris</title>
+  <meta name="description" content="Détail du service. Dr. Martin Duval, dentiste à Paris. Prenez rendez-vous en ligne." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Header (reprend les classes attendues par styles.css) -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-tooth logo-icon"></i>
+        <div class="logo-text">
+          <span>Dr. Martin Duval</span>
+          <span class="logo-subtitle">CHIRURGIEN-DENTISTE</span>
+        </div>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="index.html#home" class="nav-link">Accueil</a></li>
+          <li><a href="index.html#services" class="nav-link active">Services</a></li>
+          <li><a href="index.html#about" class="nav-link">Cabinet</a></li>
+          <li><a href="index.html#team" class="nav-link">L'équipe</a></li>
+          <li><a href="index.html#testimonials" class="nav-link">Témoignages</a></li>
+          <li><a href="#appointment" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="header-cta">
+          <a href="tel:+33123456789" class="phone-number">
+            <i class="fas fa-phone-alt"></i>
+            <span>01 23 45 67 89</span>
+          </a>
+          <a href="#appointment" class="btn btn-primary">
+            <i class="fas fa-calendar-check"></i>
+            Prendre Rendez-vous
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Service detail (layout calé sur les blocs existants : about-container + appointment-form + feature) -->
+  <section class="services" id="service-detail" style="padding-top: calc(var(--header-height) + 40px);">
+    <div class="container services-container">
+      <a href="index.html#services" class="service-link" style="margin-bottom: 18px;">
+        <i class="fas fa-arrow-left"></i>
+        Retour aux services
+      </a>
+
+      <h1 id="serviceTitle" style="margin-bottom: 8px;">Soins conservateurs</h1>
+      <p class="text-primary" id="serviceSubtitle" style="margin-bottom: 28px;">
+        Préservez vos dents naturelles avec des techniques modernes et mini-invasives
+      </p>
+
+      <div class="about-container">
+        <!-- Colonne gauche : contenu -->
+        <div class="about-content" style="max-width: 100%;">
+          <h2 style="margin-bottom: 12px;">Description détaillée</h2>
+
+          <div id="serviceFullDescription">
+            <p>
+              Les soins conservateurs représentent la base de la dentisterie moderne. Notre objectif est de préserver
+              au maximum vos dents naturelles en utilisant des techniques mini-invasives qui respectent l'intégrité
+              de la dent.
+            </p>
+
+            <h3 style="margin-top: 18px;">Pourquoi choisir nos soins conservateurs ?</h3>
+            <p>
+              Nous privilégions une approche préventive et conservatrice. Avant tout traitement, nous réalisons un
+              diagnostic précis grâce à notre équipement de pointe (radiographies numériques, caméra intra-orale)
+              pour déterminer le traitement le plus adapté à votre situation.
+            </p>
+          </div>
+
+          <!-- Points clés : on réutilise le composant "feature" du CSS -->
+          <div class="hero-features" style="margin-top: 18px;">
+            <div class="feature">
+              <div class="feature-icon"><i class="fas fa-check"></i></div>
+              <div class="feature-text">Traitement des caries (composite esthétique)</div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"><i class="fas fa-check"></i></div>
+              <div class="feature-text">Détartrage professionnel et prévention</div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"><i class="fas fa-check"></i></div>
+              <div class="feature-text">Scellement des sillons (préventif)</div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon"><i class="fas fa-check"></i></div>
+              <div class="feature-text">Soins des racines (endodontie)</div>
+            </div>
+          </div>
+
+          <!-- Tarifs : carte basée sur le style de l'appointment-form -->
+          <div class="appointment-form" style="margin-top: 26px; padding: 28px;">
+            <h3 style="margin-bottom: 10px;">Tarifs et prise en charge</h3>
+            <p style="color: var(--dark-gray);">
+              Les soins conservateurs sont pris en charge par la Sécurité Sociale et votre mutuelle selon votre contrat.
+              Une estimation précise vous sera fournie avant tout traitement.
+            </p>
+            <p style="margin-bottom: 0;"><strong>Consultation : 50€</strong> (remboursée à 70% par la Sécurité Sociale)</p>
+          </div>
+        </div>
+
+        <!-- Colonne droite : formulaire -->
+        <div id="appointment">
+          <div class="appointment-form" style="margin-top: 0;">
+            <div class="mb-2" style="display:flex; align-items:flex-start; gap:12px;">
+              <div class="feature-icon" style="flex:0 0 auto;">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div>
+                <strong>Prenez un rendez-vous pour :</strong>
+                <div id="selectedServiceName" style="color: var(--primary); font-weight: 700; margin-top: 4px;">
+                  Soins conservateurs
+                </div>
+              </div>
+            </div>
+
+            <h3 style="margin-bottom: 8px;">Formulaire de rendez-vous</h3>
+            <p class="mb-2" style="color: var(--dark-gray);">
+              Notre secrétariat vous contactera dans les 24h pour confirmer votre rendez-vous.
+            </p>
+
+            <form id="serviceRdvForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="serviceName">Nom complet *</label>
+                  <input type="text" id="serviceName" class="form-control" required placeholder="Votre nom et prénom" />
+                </div>
+
+                <div class="form-group">
+                  <label for="servicePhone">Téléphone *</label>
+                  <input type="tel" id="servicePhone" class="form-control" required placeholder="01 23 45 67 89" />
+                </div>
+
+                <div class="form-group">
+                  <label for="serviceEmail">Email *</label>
+                  <input type="email" id="serviceEmail" class="form-control" required placeholder="votre@email.com" />
+                </div>
+
+                <div class="form-group">
+                  <label for="serviceDate">Date souhaitée *</label>
+                  <input type="date" id="serviceDate" class="form-control" required />
+                </div>
+
+                <div class="form-group" style="grid-column: 1 / -1;">
+                  <label for="serviceTime">Horaire préféré *</label>
+                  <select id="serviceTime" class="form-control" required>
+                    <option value="">Sélectionnez un horaire</option>
+                    <option value="09:00">09:00 - 10:00</option>
+                    <option value="10:00">10:00 - 11:00</option>
+                    <option value="11:00">11:00 - 12:00</option>
+                    <option value="14:00">14:00 - 15:00</option>
+                    <option value="15:00">15:00 - 16:00</option>
+                    <option value="16:00">16:00 - 17:00</option>
+                    <option value="17:00">17:00 - 18:00</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="grid-column: 1 / -1;">
+                  <label for="serviceMessage">Message (optionnel)</label>
+                  <textarea id="serviceMessage" class="form-control" rows="4"
+                    placeholder="Décrivez brièvement la raison de votre visite, vos symptômes, ou toute information utile..."></textarea>
+                </div>
+
+                <input type="hidden" id="serviceType" value="soins-conservateurs" />
+              </div>
+
+              <button type="submit" class="btn btn-accent form-submit">
+                <i class="fas fa-paper-plane"></i>
+                Envoyer la demande de rendez-vous
+              </button>
+
+              <p class="text-center mt-2" style="color: var(--dark-gray); font-size: 0.9rem;">
+                <i class="fas fa-shield-alt"></i>
+                Vos données sont sécurisées et ne seront utilisées que pour votre rendez-vous.
+              </p>
+            </form>
+
+            <div class="text-center mt-2">
+              <p style="color: var(--dark-gray); font-size: 0.9rem; margin-bottom:0;">
+                Vous pouvez aussi nous appeler directement :
+                <a href="tel:+33123456789" style="color: var(--primary); font-weight: 700;">01 23 45 67 89</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer (classes attendues par styles.css) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Dr. Martin Duval</h3>
+          <p style="color: #adb5bd; margin-bottom: 20px;">
+            Cabinet dentaire offrant des soins complets dans un environnement moderne et accueillant. Votre santé
+            bucco-dentaire est notre priorité.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h3>Liens rapides</h3>
+          <ul class="footer-links">
+            <li><a href="index.html#home" class="footer-link"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+            <li><a href="index.html#services" class="footer-link"><i class="fas fa-chevron-right"></i> Nos services</a></li>
+            <li><a href="index.html#about" class="footer-link"><i class="fas fa-chevron-right"></i> Notre cabinet</a></li>
+            <li><a href="index.html#team" class="footer-link"><i class="fas fa-chevron-right"></i> L'équipe</a></li>
+            <li><a href="#appointment" class="footer-link"><i class="fas fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Nos services</h3>
+          <ul class="footer-links">
+            <li><a href="service.html?service=soins-conservateurs" class="footer-link"><i class="fas fa-tooth"></i> Soins conservateurs</a></li>
+            <li><a href="service.html?service=esthetique" class="footer-link"><i class="fas fa-teeth-open"></i> Esthétique dentaire</a></li>
+            <li><a href="service.html?service=implantologie" class="footer-link"><i class="fas fa-toothbrush"></i> Implantologie</a></li>
+            <li><a href="service.html?service=orthodontie" class="footer-link"><i class="fas fa-braces"></i> Orthodontie</a></li>
+            <li><a href="service.html?service=urgences" class="footer-link"><i class="fas fa-hospital-user"></i> Urgences</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Adresse</h4>
+                <p>123 Avenue des Champs-Élysées<br />75008 Paris, France</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <h4>Téléphone</h4>
+                <p>01 23 45 67 89</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>contact@dr-martinduval.fr</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Horaires</h4>
+                <p>Lun-Ven: 8h-19h<br />Samedi: 9h-13h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2024</span> Cabinet dentaire Dr. Martin Duval. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Données des services (inchangé, mais on injecte dans les bons IDs)
+    const servicesData = {
+      'soins-conservateurs': {
+        title: 'Soins conservateurs',
+        icon: 'fa-tooth',
+        subtitle: 'Préservez vos dents naturelles avec des techniques modernes et mini-invasives',
+        description: `
+          <p>Les soins conservateurs représentent la base de la dentisterie moderne. Notre objectif est de préserver au maximum vos dents naturelles en utilisant des techniques mini-invasives qui respectent l'intégrité de la dent.</p>
+          <h3 style="margin-top: 18px;">Pourquoi choisir nos soins conservateurs ?</h3>
+          <p>Nous privilégions une approche préventive et conservatrice. Avant tout traitement, nous réalisons un diagnostic précis grâce à notre équipement de pointe (radiographies numériques, caméra intra-orale) pour déterminer le traitement le plus adapté à votre situation.</p>
+          <h3 style="margin-top: 18px;">Notre approche</h3>
+          <p>Chaque traitement est personnalisé selon vos besoins spécifiques. Nous utilisons des anesthésies locales modernes pour un maximum de confort et des techniques atraumatiques pour minimiser l'inconfort pendant et après les soins.</p>
+        `,
+        features: [
+          'Traitement des caries (composite esthétique)',
+          'Détartrage professionnel et prévention',
+          'Scellement des sillons (préventif)',
+          'Soins des racines (endodontie)'
+        ]
+      },
+      'esthetique': {
+        title: 'Esthétique du sourire',
+        icon: 'fa-teeth-open',
+        subtitle: "Redonnez de l'éclat à votre sourire avec nos traitements esthétiques personnalisés",
+        description: `
+          <p>L'esthétique dentaire combine art et science pour créer des sourires harmonieux et naturels. Nos traitements sont personnalisés pour s'adapter à votre morphologie faciale, la couleur de votre peau et vos attentes.</p>
+          <h3 style="margin-top: 18px;">Notre philosophie</h3>
+          <p>Nous croyons en une approche minimaliste et naturelle. Notre objectif est d'améliorer votre sourire tout en conservant le caractère unique de vos dents.</p>
+          <h3 style="margin-top: 18px;">Technologies utilisées</h3>
+          <p>Caméra intra-orale HD, simulation de sourire, et laboratoire numérique pour des résultats prévisibles et naturels.</p>
+        `,
+        features: [
+          'Blanchiment dentaire professionnel',
+          'Facettes en céramique',
+          'Couronnes esthétiques',
+          'Contouring dentaire'
+        ]
+      },
+      'implantologie': {
+        title: 'Implantologie',
+        icon: 'fa-toothbrush',
+        subtitle: 'Une solution durable et naturelle pour retrouver une mastication optimale',
+        description: `
+          <p>L'implantologie moderne offre des solutions fiables et durables pour remplacer une ou plusieurs dents manquantes.</p>
+          <h3 style="margin-top: 18px;">Planification numérique</h3>
+          <p>Scanner 3D + simulation chirurgicale pour une pose précise et un résultat esthétique.</p>
+        `,
+        features: [
+          'Implants unitaires',
+          'Bridge sur implants',
+          'Prothèses sur implants',
+          'Greffe osseuse si nécessaire'
+        ]
+      },
+      'orthodontie': {
+        title: 'Orthodontie',
+        icon: 'fa-braces',
+        subtitle: "Traitements orthodontiques pour enfants et adultes. Alignement parfait et discret.",
+        description: `
+          <p>L'orthodontie contribue à l'harmonie du visage, à une bonne fonction masticatoire et à la prévention de problèmes articulaires.</p>
+          <h3 style="margin-top: 18px;">Options discrètes</h3>
+          <p>Aligneurs transparents, brackets céramiques, orthodontie linguale.</p>
+        `,
+        features: [
+          'Invisalign®',
+          'Brackets céramiques',
+          'Orthodontie linguale',
+          'Orthodontie précoce'
+        ]
+      },
+      'parodontologie': {
+        title: 'Parodontologie',
+        icon: 'fa-teeth',
+        subtitle: "Traitement des maladies des gencives. Préservez le soutien de vos dents.",
+        description: `
+          <p>La parodontologie traite les maladies qui affectent les tissus de soutien des dents (gencives, os).</p>
+          <h3 style="margin-top: 18px;">Diagnostic précoce</h3>
+          <p>Un dépistage régulier permet de traiter avant dommages irréversibles.</p>
+        `,
+        features: [
+          'Détartrage et surfaçage',
+          'Traitement laser',
+          'Greffe de gencive',
+          'Maintenance parodontale'
+        ]
+      },
+      'urgences': {
+        title: 'Urgences dentaires',
+        icon: 'fa-hospital-user',
+        subtitle: "Douleurs, traumatismes, abcès. Prise en charge rapide et soulagement immédiat.",
+        description: `
+          <p>Les urgences dentaires nécessitent une prise en charge rapide pour soulager la douleur et éviter l'aggravation.</p>
+          <h3 style="margin-top: 18px;">Notre engagement</h3>
+          <p>Rendez-vous le jour même ou dans les 24 heures après évaluation téléphonique.</p>
+        `,
+        features: [
+          'Douleurs aiguës',
+          'Traumatismes dentaires',
+          'Abcès et infections',
+          'Problèmes de prothèses'
+        ]
+      }
+    };
+
+    function loadServiceData() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceId = urlParams.get('service') || 'soins-conservateurs';
+      const serviceData = servicesData[serviceId];
+      if (!serviceData) return;
+
+      document.title = `Dr. Martin Duval - ${serviceData.title} | Cabinet Dentaire à Paris`;
+
+      const metaDescription = document.querySelector('meta[name="description"]');
+      metaDescription.setAttribute('content', `${serviceData.subtitle}. Dr. Martin Duval, dentiste à Paris. Prenez rendez-vous en ligne.`);
+
+      document.getElementById('serviceTitle').textContent = serviceData.title;
+      document.getElementById('serviceSubtitle').textContent = serviceData.subtitle;
+      document.getElementById('selectedServiceName').textContent = serviceData.title;
+
+      const descriptionContainer = document.getElementById('serviceFullDescription');
+      descriptionContainer.innerHTML = serviceData.description;
+
+      // Remplace les 4 "feature" par les features du service (toujours stylées par CSS)
+      const featuresWrap = document.querySelector('.hero-features');
+      if (featuresWrap) {
+        featuresWrap.innerHTML = '';
+        serviceData.features.forEach(txt => {
+          const el = document.createElement('div');
+          el.className = 'feature';
+          el.innerHTML = `
+            <div class="feature-icon"><i class="fas fa-check"></i></div>
+            <div class="feature-text">${txt}</div>
+          `;
+          featuresWrap.appendChild(el);
+        });
+      }
+
+      document.getElementById('serviceType').value = serviceId;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      loadServiceData();
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      const appointmentForm = document.getElementById('serviceRdvForm');
+      if (appointmentForm) {
+        const dateInput = document.getElementById('serviceDate');
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+
+        appointmentForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const formData = {
+            name: document.getElementById('serviceName').value,
+            phone: document.getElementById('servicePhone').value,
+            email: document.getElementById('serviceEmail').value,
+            date: document.getElementById('serviceDate').value,
+            time: document.getElementById('serviceTime').value,
+            message: document.getElementById('serviceMessage').value,
+            service: document.getElementById('selectedServiceName').textContent
+          };
+
+          if (!formData.name || !formData.phone || !formData.email || !formData.date || !formData.time) {
+            alert('Veuillez remplir tous les champs obligatoires (*).');
+            return;
+          }
+
+          const whatsappMessage =
+            `Bonjour, je souhaite prendre rendez-vous pour :%0A%0A` +
+            `*Service :* ${formData.service}%0A` +
+            `*Nom :* ${formData.name}%0A` +
+            `*Téléphone :* ${formData.phone}%0A` +
+            `*Email :* ${formData.email}%0A` +
+            `*Date souhaitée :* ${formData.date}%0A` +
+            `*Horaire :* ${formData.time}%0A` +
+            (formData.message ? `*Message :* ${formData.message}%0A` : '');
+
+          window.open(`https://wa.me/33123456789?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+          alert(`Merci ${formData.name} ! Votre demande de rendez-vous pour "${formData.service}" a été envoyée.`);
+
+          appointmentForm.reset();
+          dateInput.min = today;
+        });
+      }
+
+      // Mobile menu toggle (compatible avec styles.css: .nav.active)
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav');
+
+      const setOpen = (open) => {
+        nav.classList.toggle('active', open);
+        hamburger.innerHTML = open ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        document.body.style.overflow = open ? 'hidden' : '';
+      };
+
+      hamburger.addEventListener('click', () => setOpen(!nav.classList.contains('active')));
+      document.querySelectorAll('.nav-link').forEach(a => a.addEventListener('click', () => setOpen(false)));
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
+      window.addEventListener('resize', () => { if (window.innerWidth > 768) setOpen(false); });
+    });
+  </script>
+</body>
+</html>
